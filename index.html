@@ -24,6 +24,7 @@
             background-color: #ff6347;
             padding: 10px 0;
             text-align: center;
+            position: relative;
         }
         nav a {
             color: #ffffff;
@@ -33,6 +34,29 @@
         }
         nav a:hover {
             text-decoration: underline;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
         .container {
             max-width: 800px;
@@ -75,6 +99,14 @@
         <a href="#events">活动</a>
         <a href="#contact">联系我们</a>
         <a href="bernoulli.html">伯努利原理</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)">器材</a>
+            <div class="dropdown-content">
+                <a href="equipment_blades.html">10大乒乓球底板（2023）</a>
+                <a href="equipment_forehand.html">10大最佳正手胶皮（2023）</a>
+                <a href="equipment_backhand.html">十大最佳反手胶皮（2023）</a>
+            </div>
+        </div>
     </nav>
     <div class="container">
         <section id="about">
